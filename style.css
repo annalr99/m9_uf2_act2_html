@@ -1,0 +1,113 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Great+Vibes&family=Red+Hat+Display:wght@300&display=swap');
+
+
+#background-image{
+    position: absolute;
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+#cont-square{
+    position: absolute;
+    margin-top: 10vh;
+    width: 100vw;
+    height: 80vh;
+    z-index: 3;
+    background-color: white;
+    opacity: 0.2;
+    
+}
+
+#logo{
+    position: absolute;
+    z-index: 4;
+    width: 30vw;
+    height: 10vh;
+    margin-top: 13vh;
+    margin-left: 34vw;
+}
+
+#album-img{
+    position: absolute;
+    margin-top: 28vh;
+    margin-left: 5vw;
+    width: 50%;
+    height: 50%;
+    z-index: 4;
+}
+
+#reproductor{
+    position: absolute;
+    margin-top: 28vh;
+    margin-left: 65vw;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    z-index: 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 137px 40px 232px;
+    grid-template-areas:
+        'imgAlbum'
+        'control'
+        'songsList'
+    ;
+}
+
+#imgAlbumReproductor{
+    width: 128px;
+    height: 128px;
+    margin: auto;
+    margin-top: 10px;
+    grid-area: imgAlbum;
+}
+
+.audioHidden{
+    display: none;
+
+}
+
+.audioNoHidden{
+    width: 256px;
+    margin: auto;
+    background-color: black;
+    grid-area: control;
+}
+
+.songList{
+    width: 256px;
+    height: 40px;
+    padding-top: 15px;
+    border-color: black;
+    background-color: aquamarine;
+    border-top: 5px;
+    margin: auto;
+    grid-area: songsList;
+}
+
+#song1{
+    margin-top: 0px;
+    
+}
+#song2{
+    margin-top: 40px;
+}
+#song3{
+    margin-top: 80px;
+}
+#song4{
+    margin-top: 120px;
+}
+#song5{
+    margin-top: 160px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Red Hat Display', sans-serif;
+}
